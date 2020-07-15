@@ -1,0 +1,578 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 0px;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 97%;
+  margin: 0 auto;
+}
+
+/* =================================
+navbar styling starts here 
+================================= */
+header {
+  background-color: #f1f1f1;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav li {
+  padding: 5px 0;
+  width: 25%;
+  text-align: center;
+}
+
+.nav li a {
+  color: black;
+  font-size: 20px;
+}
+
+.nav li:hover {
+  background-color: black;
+}
+.nav li a:hover {
+  color: #f1f1f1;
+}
+
+/* =================================
+navbar styling ends here 
+================================= */
+
+/* =================================
+banner styling starts here 
+================================= */
+.banner {
+  padding: 60px 0;
+}
+.banner h2 {
+  font-size: 40px;
+  font-weight: 550;
+  color: black;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+/* =================================
+banner styling ends here 
+================================= */
+
+/* =================================
+offer styling starts here 
+================================= */
+.offer {
+  display: flex;
+  flex-direction: column;
+}
+.offer h3 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 35px;
+  font-weight: 350;
+  width: 18%;
+  color: darkslategrey;
+  margin-bottom: 50px;
+  border-bottom: 5px solid grey;
+  text-transform: capitalize;
+  margin: auto;
+}
+.dbcpul {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+.dbcpul li {
+  padding: 30px 25px;
+}
+.dbcpul h4 {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.dbcpul p {
+  font-size: 20px;
+}
+
+.Design {
+  background: #f1f1f1;
+}
+
+.Branding {
+  background: #bbbbbb;
+}
+
+.Consultation {
+  color: #f1f1f1;
+  background: #616161;
+}
+
+.Promises {
+  color: #fff;
+  background: #000000;
+}
+/* =================================
+offer styling ends here 
+================================= */
+
+/* =================================
+price styling starts here 
+================================= */
+.pricing h2 {
+  padding-top: 15px;
+  font-size: 35px;
+  font-weight: 350;
+  text-align: center;
+  color: darkslategrey;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.plans {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+  flex-basis: 30%;
+}
+.pricing p {
+  font-size: 20px;
+  color: darkslategray;
+  text-align: center;
+}
+.plans ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.plans article {
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.plans h3 {
+  padding: 15px 0;
+  font-size: 35px;
+  font-weight: 350;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  background-color: black;
+}
+.plans li {
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+}
+.plans li span:first-of-type {
+  font-style: bold;
+}
+
+.signup {
+  background-color: #f1f1f1;
+}
+.signup a {
+  border: 1px solid rgb(8, 128, 24);
+  padding: 10px 15px;
+  background-color: rgb(8, 128, 24);
+  color: white;
+}
+
+.signup a:hover {
+  background-color: white;
+  color: rgb(8, 128, 24);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+}
+
+.plans li span {
+  font-weight: 200;
+  font-size: 15px;
+}
+.plans li span > span {
+  font-weight: 500;
+  font-size: 25px;
+}
+/* =================================
+price styling ends here 
+================================= */
+
+/* =================================
+aboutus styling starts here 
+================================= */
+
+.AboutUs h2 {
+  padding-top: 15px;
+  font-size: 35px;
+  font-weight: 350;
+  text-align: center;
+  color: darkslategrey;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.AboutUs article {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Profile h3 {
+  font-size: 25px;
+  font-weight: 400;
+  width: 90%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.Profile span {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  color: darkslategray;
+}
+.Profile p {
+  padding-bottom: 20px;
+  line-height: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.Profile {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.contact {
+  margin-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 15px;
+  width: 90%;
+  box-sizing: border-box;
+  color: #000;
+  background: #f1f1f1;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: capitalize;
+  height: 40px;
+}
+
+.contact:hover {
+  color: #f1f1f1;
+  background: #000;
+  cursor: pointer;
+}
+
+/* =================================
+aboutus styling ends here 
+================================= */
+/*=================================
+  Contact styling starts here
+=================================*/
+
+/*=================================
+  Contact styling ends here
+=================================*/
+
+/*=================================
+  main styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/
+
+footer {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+footer h2 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+footer p {
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.to-top {
+  width: 12.6%;
+  padding: 9px 0;
+  margin-bottom: 36px;
+  background: #000;
+  border: 1px solid;
+  color: #fff;
+  font-weight: 600;
+}
+
+.to-top:before {
+  content: "\f062";
+  padding-right: 13%;
+  font-family: fontAwesome;
+  color: #fff;
+}
+
+.social-icons {
+  padding-bottom: 26px;
+}
+.social-icons li {
+  padding: 0px 3px;
+}
+
+.linkedin,
+.snapchat,
+.pinterest,
+.facebook,
+.instagram,
+.twitter {
+  text-indent: -9999px;
+  display: inline-block;
+  font-size: 24px;
+  color: #000;
+}
+
+.snapchat::before,
+.linkedin::before,
+.pinterest::before,
+.instagram::before,
+.twitter::before,
+.facebook::before {
+  font-family: fontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.snapchat::before {
+  content: "\f2ab";
+}
+.linkedin::before {
+  content: "\f0e1";
+}
+.facebook::before {
+  content: "\f082";
+}
+.twitter::before {
+  content: "\f099";
+}
+.instagram::before {
+  content: "\f16d";
+}
+.pinterest::before {
+  content: "\f0d2";
+}
+footer p {
+  padding-bottom: 36px;
+}
+
+footer p a {
+  color: #000;
+  text-decoration: underline;
+}
